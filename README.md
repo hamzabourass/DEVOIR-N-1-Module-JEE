@@ -35,11 +35,15 @@ Ce projet consiste en une petit application ecommerce basée sur une architectur
 - **Service des produit** : Gère les produit.
 - **Service des commandes** : Gère les commandes.
 
-Les microservices techniques à implémenter sont :
+
+Les fonctionalités et microservices techniques à implémenter sont :
 
 - **Passerelle de Services** : Basée sur Spring Cloud Gateway.
 - **Service de Découverte** : Basée sur Eureka Server.
 - **Service de Configuration** : Basée sur Spring Cloud Config.
+- **Open Fein** : Gère la communication entre les  deux microservices.
+- **Resilience4j** : Offre une Implementation du pattern Circuit Breaker pour la tolerance au panne.
+  
 ## Tasks
 
 ### 1. Architecture du Projet
