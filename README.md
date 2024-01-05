@@ -1,5 +1,10 @@
 # Projet de Microservices E-commerce
 
+## Team de développement
+- **Hamza Bouars et Oussama El Meskini**
+
+
+
 ## Table des matières
 1. [Présentation du projet](#présentation-du-projet)
 2. [Tâches](#tâches)
@@ -25,7 +30,7 @@ Etapes pour lancer le projet :
 ```
 # Gestion des Réservations
 
-Ce projet consiste en une application de gestion des réservations basée sur une architecture de microservices. L'application se compose de deux microservices fonctionnels :
+Ce projet consiste en une petit application ecommerce basée sur une architecture de microservices. L'application se compose de deux microservices fonctionnels :
 
 - **Service des produit** : Gère les produit.
 - **Service des commandes** : Gère les commandes.
