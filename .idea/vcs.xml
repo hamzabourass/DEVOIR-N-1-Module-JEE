@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="$PROJECT_DIR$" vcs="" />
+    <mapping directory="$PROJECT_DIR$/config-server-repo" vcs="" />
+    <mapping directory="$PROJECT_DIR$/config-service" vcs="" />
+    <mapping directory="$PROJECT_DIR$/discovery-service" vcs="" />
+    <mapping directory="$PROJECT_DIR$/gateway-service" vcs="" />
+    <mapping directory="$PROJECT_DIR$/microservice-commandes" vcs="" />
+    <mapping directory="$PROJECT_DIR$/microservice-commandesV2" vcs="" />
+    <mapping directory="$PROJECT_DIR$/microservice-produit" vcs="" />
+  </component>
+</project>
