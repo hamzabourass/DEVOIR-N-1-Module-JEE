@@ -55,9 +55,9 @@ Develop and test the following microservices:
   
 - **Config Service**:
 
-![image](https://github.com/hamzabourass/DEVOIR-N-1-Module-JEE/assets/105117343/e09f4d1f-5ce0-4225-b203-fb4b1edb3eff)
+![image](https://github.com/hamzabourass/DEVOIR-N-1-Module-JEE/assets/105117343/e09f4d1f-5ce0-4225-b203-fb4b1edb3eff) ![image](https://github.com/hamzabourass/DEVOIR-N-1-Module-JEE/assets/105117343/5166fb4c-88a8-4329-a7a7-a8838de325eb)
 
-![image](https://github.com/hamzabourass/DEVOIR-N-1-Module-JEE/assets/105117343/5166fb4c-88a8-4329-a7a7-a8838de325eb)
+
 
 `config git repository` : https://github.com/hamzabourass/ecom-config-repo
 
