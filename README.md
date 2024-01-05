@@ -4,9 +4,8 @@
 1. [Présentation du projet](#présentation-du-projet)
 2. [Tâches](#tâches)
    - [1. Architecture technique](#1-architecture-technique)
-   - [2. Développement technique et tests des microservices](#2-développement-technique-et-tests-des-microservices)
-   - [3. Développement et tests du service de produit](#3-développement-et-tests-du-service-de-ressources)
-   - [4. Développement et tests du service de commande](#4-développement-et-tests-du-service-de-réservation)
+   - [2. Développement et tests des microservices technique](#2-développement-technique-et-tests-des-microservices)
+   - [3. Développement et tests du microservice fonctionelle ](#3-développement-et-tests-du-service-de-ressources)
 
 ---
 ## Project Overview
@@ -37,7 +36,7 @@ Les microservices techniques à implémenter sont :
 
 Architecture technique du projet, les microservices et ses interation.
 ![image](https://github.com/hamzabourass/DEVOIR-N-1-Module-JEE/assets/105117343/571fee24-4f40-4ba3-acec-e6003cce6335)
-### 3. Technical Microservices Development and Testing
+### 2. Développement et tests des microservices technique
 
 Develop and test the following microservices:
 
@@ -61,7 +60,7 @@ Develop and test the following microservices:
 
 `config git repository` : https://github.com/hamzabourass/ecom-config-repo
 
-### 4. Development and Testing
+### 4. Développement et tests du microservice fonctionelle
 
 Develop and test the `resources-service` microservice, including:
 
