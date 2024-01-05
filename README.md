@@ -17,6 +17,11 @@ La table « COMMANDE » est composée » des colonnes suivantes [id,
 description, quantité, date, montant]
 la table « COMMANDE » est composée » des colonnes suivantes [id,name,
 description, price]
+Etapes pour lancer le projet :
+**1- Lancer les microservice technique config-service->discovery-service->gatewaye-service**
+**2- Lancer les microservice fonctionelle produit et commande**
+
+
 ```
 # Gestion des Réservations
 
