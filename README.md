@@ -24,8 +24,8 @@ la table « COMMANDE » est composée » des colonnes suivantes [id,name,
 description, price]
 Etapes pour lancer le projet :
 **1- Cloner le projet dans votre**
-**1- Lancer les microservice technique config-service->discovery-service->gatewaye-service**
-**2- Lancer les microservice fonctionelle produit et commande**
+**2- Lancer les microservice technique config-service->discovery-service->gatewaye-service**
+**3- Lancer les microservice fonctionelle produit et commande**
 
 
 ```
