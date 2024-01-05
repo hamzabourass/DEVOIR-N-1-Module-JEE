@@ -34,7 +34,7 @@ Les microservices techniques à implémenter sont :
 - **Service de Configuration** : Basée sur Spring Cloud Config.
 ## Tasks
 
-### 1. Technical Architecture
+### 1. Architecture du Projet
 
-Technical architecture for the project, including the microservices and their interactions. Identify the technologies and tools used for each component.
+Architecture technique du projet, les microservices et ses interation.
 ![image](https://github.com/hamzabourass/DEVOIR-N-1-Module-JEE/assets/105117343/571fee24-4f40-4ba3-acec-e6003cce6335)
