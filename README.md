@@ -68,7 +68,7 @@ Develop and test the following microservices:
 
   Test de l'acceder à une service via le Gateway :
 
-![image](https://github.com/hamzabourass/DEVOIR-N-1-Module-JEE/assets/105117343/3929cfca-2c4b-456a-9a0b-914707099a3d)
+  ![image](https://github.com/hamzabourass/DEVOIR-N-1-Module-JEE/assets/105117343/3929cfca-2c4b-456a-9a0b-914707099a3d)
 
   
 - **Config Service**:
