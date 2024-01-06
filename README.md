@@ -113,13 +113,20 @@ Develop and test the `resources-service` microservice, including:
   
 ![image](https://github.com/hamzabourass/DEVOIR-N-1-Module-JEE/assets/105117343/a3bc142d-e720-4fb3-bc4b-e67ea82eff5c)
 
-* Endpoints Tests
-  
-![image](https://github.com/hamzabourass/DEVOIR-N-1-Module-JEE/assets/105117343/97dce648-dacb-4b77-8f6d-0557eb825b44)
+* Endpoints Tests et changement a chaud :
 
-![image](https://github.com/hamzabourass/DEVOIR-N-1-Module-JEE/assets/105117343/6a141c3e-9a83-419b-8b10-512055e9bcc7)
+Apres le changement dans la repo distant :
 
-* Swagger
+![image](https://github.com/hamzabourass/DEVOIR-N-1-Module-JEE/assets/105117343/898e2a38-0fae-497e-8afa-a75d79c8faa7)
+
+Avant le changment et faire un push au repo distant et l'envoie d'une requete post pour rafraîchir : 
+
+1 - ![image](https://github.com/hamzabourass/DEVOIR-N-1-Module-JEE/assets/105117343/a1d93847-7096-4fce-97e6-6f4a1149d7fe)
+2 - ![image](https://github.com/hamzabourass/DEVOIR-N-1-Module-JEE/assets/105117343/855c70f4-57b5-4cc6-822c-6918188ebfe9)
+3 - ![image](https://github.com/hamzabourass/DEVOIR-N-1-Module-JEE/assets/105117343/b4d45549-b01b-44ac-aa75-9bafd3b45709)
+
+
+* Documentation Swagger :
 
 ![image](https://github.com/hamzabourass/DEVOIR-N-1-Module-JEE/assets/105117343/c74ea983-c2f3-460c-a2a5-63cdec811f15)
 
