@@ -29,7 +29,7 @@ Etapes pour lancer le projet :
 
 
 ```
-# Gestion des Réservations
+# Miceroservice projet
 
 Ce projet consiste en une petit application ecommerce basée sur une architecture de microservices. L'application se compose de deux microservices fonctionnels :
 
