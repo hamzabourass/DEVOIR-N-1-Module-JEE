@@ -62,15 +62,36 @@ Develop and test the following microservices:
 
 - **Gateway Service**:
 
-![image](https://github.com/hamzabourass/DEVOIR-N-1-Module-JEE/assets/105117343/cd13ccb9-c803-40cb-84b1-d560348bd098)
+Test du health du Gateway : 
 
-![image](https://github.com/hamzabourass/DEVOIR-N-1-Module-JEE/assets/105117343/875abaca-0e2a-4421-968c-2f31abc10cfd)
+![image](https://github.com/hamzabourass/DEVOIR-N-1-Module-JEE/assets/105117343/2a0b7146-7b18-45c2-a4f9-5b876f0bb893)
+
+Test de l'acceder à une service via le Gateway :
+
+![image](https://github.com/hamzabourass/DEVOIR-N-1-Module-JEE/assets/105117343/3929cfca-2c4b-456a-9a0b-914707099a3d)
 
   
 - **Config Service**:
 
-![image](https://github.com/hamzabourass/DEVOIR-N-1-Module-JEE/assets/105117343/e09f4d1f-5ce0-4225-b203-fb4b1edb3eff) ![image](https://github.com/hamzabourass/DEVOIR-N-1-Module-JEE/assets/105117343/5166fb4c-88a8-4329-a7a7-a8838de325eb)
+Test du health de service de configuration :
 
+![image](https://github.com/hamzabourass/DEVOIR-N-1-Module-JEE/assets/105117343/b5db565f-a151-495e-ab61-22eaec17f294)
+
+Test de recuperation de config d'une service : 
+
+![image](https://github.com/hamzabourass/DEVOIR-N-1-Module-JEE/assets/105117343/b91f83e6-5f0a-4309-90ec-15145a62ca6f)
+
+- **Open Fein** :
+
+Test de communication entre les deux micro-service (commande et produit) via open Fein :
+
+![image](https://github.com/hamzabourass/DEVOIR-N-1-Module-JEE/assets/105117343/7cb276e4-020e-4f1c-a81d-402ce3a80f2c)
+
+- **Circuit Breaker avec Resilience4j** :
+
+Apres l'arrete du service produit :
+
+![image](https://github.com/hamzabourass/DEVOIR-N-1-Module-JEE/assets/105117343/1d7a1952-3e07-4218-bcca-d8194e75768f)
 
 
 `config git repository` : https://github.com/hamzabourass/ecom-config-repo
