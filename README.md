@@ -79,7 +79,7 @@ Develop and test the following microservices:
 
   Test de recuperation de config d'une service : 
 
-![image](https://github.com/hamzabourass/DEVOIR-N-1-Module-JEE/assets/105117343/b91f83e6-5f0a-4309-90ec-15145a62ca6f)
+  ![image](https://github.com/hamzabourass/DEVOIR-N-1-Module-JEE/assets/105117343/b91f83e6-5f0a-4309-90ec-15145a62ca6f)
 
 - **Open Fein** :
 
