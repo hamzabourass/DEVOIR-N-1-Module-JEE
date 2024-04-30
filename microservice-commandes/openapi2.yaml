@@ -1,0 +1,112 @@
+openapi: 3.0.0
+info:
+  version: 1.1.0
+  title: FeverTokens API
+  description: fevertokens-api
+  license:
+    url: https://fevertokens.io
+    name: MIT
+  contact:
+    name: FeverTokens API
+    url: https://fevertokens.io
+    email: dev@fevertokens.io
+servers:
+  - url: https://api.fevertokens.io/v1
+    description: Production server
+tags:
+  - name: Projects
+    description: get list of projects, create a new project
+  - name: Collections
+    description: get list of collections, create a new collection
+  - name: Items
+    description: get list of items, create a new item
+  - name: Contracts
+    description: contracts
+
+paths:
+  /projects:
+    get:
+      tags: [Projects]
+      summary: Retrieve a list of projects
+      description: Returns a paginated list of projects.
+      parameters:
+        - name: page
+          in: query
+          description: Page number to retrieve (optional, default is 1)
+          schema:
+            type: integer
+            default: 1
+        - name: pageSize
+          in: query
+          description: Number of projects per page (optional, default is 10)
+          schema:
+            type: integer
+            default: 10
+      security:
+        - ApiKeyAuth: []
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ProjectList'
+components:
+  securitySchemes:
+    ApiKeyAuth:
+      type: apiKey
+      in: header
+      name: X-API-Key
+  schemas:
+    ProjectList:
+      type: object
+      properties:
+        pageSize:
+          type: integer
+          description: Number of projects per page
+        projects:
+          type: array
+          items:
+            $ref: '#/components/schemas/Project'
+          maxItems: 100
+        totalPages:
+          type: integer
+          description: Total number of pages
+        total:
+          type: integer
+          description: Total number of projects
+
+
+    Project:
+      type: object
+      properties:
+        projectName:
+          type: string
+          description: Name of the project
+        projectDescription:
+          type: string
+          description: Description of the project
+        projectStatus:
+          type: string
+          description: Status of the project
+          enum:
+            - PUBLISHED
+        projectData:
+          $ref: '#/components/schemas/ProjectData'
+
+    ProjectData:
+      type: object
+      properties:
+        projectType:
+          type: string
+          description: Type of the project
+          maxLength: 32
+          pattern: ^example-[0-9a-z]+$
+        projectContentType:
+          type: string
+          description: Content type of the project
+          maxLength: 32
+          pattern: ^example-[0-9a-z]+$
+        customUI:
+          type: object
+          description: Custom UI of the project

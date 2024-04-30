@@ -1,0 +1,90 @@
+services:
+
+  #### Discovery Service ####
+  discovery-service:
+    build: ./discovery-service
+    container_name: discovery-service
+    ports:
+      - '8761:8761'
+    expose:
+      - '8761'
+    healthcheck:
+      test: [ "CMD", "curl", "-f", "http://localhost:8761/actuator/health" ]
+      interval: 10s
+      retries: 4
+
+  #### Config Service ####
+  config-service:
+    build: ./config-service
+    container_name: config-service
+    ports:
+      - '9999:9999'
+    expose:
+      - '9999'
+    environment:
+      - DISCOVERY_SERVICE_URL=http://discovery-service:8761/eureka # We put this url to take instead of localhost
+    depends_on:
+      discovery-service:
+          condition: service_healthy
+    healthcheck:
+      test: [ "CMD", "curl", "-f", "http://localhost:9999/actuator/health" ]
+      interval: 10s
+      retries: 4
+
+  #### PRODUCT MICROSERVICE ####
+  product-service:
+    build: ./microservice-produit
+    container_name: product-service
+    ports:
+      - '8082:8082'
+    expose:
+      - '8082'
+    environment:
+      - DISCOVERY_SERVICE_URL=http://discovery-service:8761/eureka #
+      - CONFIG_SERVICE_URL=http://config-service:9999
+    depends_on:
+      config-service:
+        condition: service_healthy
+    healthcheck:
+      test: [ "CMD", "curl", "-f", "http://localhost:8082/actuator/health" ]
+      interval: 10s
+      retries: 4
+
+  #### COMMANDE MICROSERVICE ####
+  commande-service:
+    build: ./microservice-commandesV2
+    container_name: commande-service
+    ports:
+      - '8081:8081'
+    expose:
+      - '8081'
+    environment:
+      - DISCOVERY_SERVICE_URL=http://discovery-service:8761/eureka #
+      - CONFIG_SERVICE_URL=http://config-service:9999
+    depends_on:
+      product-service:
+        condition: service_healthy
+    healthcheck:
+      test: [ "CMD", "curl", "-f", "http://localhost:8082/actuator/health" ]
+      interval: 10s
+      retries: 4
+
+  #### GATEWAY MICROSERVICE ####
+  gateway-service:
+    build: ./gateway-service
+    container_name: gateway-service
+    ports:
+      - '8282:8282'
+    expose:
+      - '8282'
+    environment:
+      - DISCOVERY_SERVICE_URL=http://discovery-service:8761/eureka #
+      - CONFIG_SERVICE_URL=http://config-service:9999
+    depends_on:
+      config-service:
+        condition: service_healthy
+    healthcheck:
+      test: [ "CMD", "curl", "-f", "http://localhost:8082/actuator/health" ]
+      interval: 10s
+      retries: 4
+
