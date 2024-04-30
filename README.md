@@ -1,9 +1,5 @@
 # Projet de Microservices E-commerce
 
-## Team de développement
-- **Hamza Bouars et Oussama El Meskini**
-
-
 
 ## Table des matières
 1. [Présentation du projet](#présentation-du-projet)
