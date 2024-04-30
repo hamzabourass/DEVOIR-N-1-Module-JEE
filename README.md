@@ -2,11 +2,11 @@
 
 
 ## Table des matières
-1. [Présentation du projet](#Project Overview)
+1. [Présentation du projet](#ProjectOverview)
 2. [Tâches](#Tasks)
-   - [1. Architecture technique](#1. architecture-technique)
-   - [2. Développement et tests des microservices technique](#2. développement-technique-et-tests-des-microservices)
-   - [3. Développement et tests du microservice fonctionelle ](#3. développement-et-tests-du-service-de-ressources)
+   - [1. Architecture technique](#1-architecture-technique)
+   - [2. Développement et tests des microservices technique](#2-développement-technique-et-tests-des-microservices)
+   - [3. Développement et tests du microservice fonctionelle ](#3-développement-et-tests-du-service-de-ressources)
 
 ---
 ## Project Overview
