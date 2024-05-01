@@ -88,3 +88,11 @@ services:
       interval: 10s
       retries: 4
 
+  #### Angular Frontend ####
+  front-send-angular:
+    build: ./angular-front
+    container_name: angular-front
+    ports:
+      - '82:80'
+    expose:
+      - '82'

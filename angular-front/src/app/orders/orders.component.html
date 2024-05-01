@@ -1,0 +1,28 @@
+<div class="p-3">
+  <div class="card">
+    <div class="card-body">
+      <table class="table table-striped" *ngIf="orders">
+        <thead>
+        <tr>
+          <th>ID</th>
+          <th>Description</th>
+          <th>Quantity</th>
+          <th>Date</th>
+          <th>Product Name</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr *ngFor="let o of orders">
+          <td>{{o.id}}</td>
+          <td>{{o.desc}}</td>
+          <td>{{o.quantity}}</td>
+          <td>{{o.date}}</td>
+          <td>{{o.produit.name}}</td>
+
+        </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
